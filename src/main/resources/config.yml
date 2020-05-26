@@ -1,0 +1,27 @@
+world-to-teleport-to: 'wilderness'
+
+cooldown:
+  enabled: true
+  time: 60
+
+warmup:
+  enabled: true
+  time: 5
+
+hook-into-worldborder:
+  enabled: true
+  min-range-x: 0
+  min-range-z: 0
+  max-range-x: 100
+  max-range-z: 100
+
+hooks:
+  lands:
+    enabled: false
+    
+messages:
+  noPermission: '&cYou don''t have the permission for execute this command'
+  cooldown: '&cYou''ve to wait 60 seconds before teleport again'
+  warmup: '&cYou will be teleported in 5 seconds'
+  teleported: '&aTeleported'
+  reloaded: '&aPlugin reloaded'

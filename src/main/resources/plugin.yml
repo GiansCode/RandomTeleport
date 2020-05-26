@@ -1,0 +1,11 @@
+name: RandomTeleport
+author: xQuickGlare
+version: 1.0
+main: io.alerium.randomteleport.RandomTeleportPlugin
+softdepend: [WorldBorder, Lands]
+commands:
+  randomteleport:
+    aliases: [rtp, randomtp]
+    description: This command teleports the player
+  rtpreload:
+    description: This command reloads the plugin config
