@@ -73,7 +73,12 @@ public class RandomTPCommand implements CommandExecutor {
                 return;
             }
 
-            PaperLib.teleportAsync(player, tpLoc).thenAccept(success -> player.sendMessage(plugin.getMessage("teleported")));
+            PaperLib.teleportAsync(player, tpLoc).thenAccept(success -> player.sendMessage(
+                    plugin.getMessage("teleported")
+                    .replaceAll("%x%", Integer.toString(tpLoc.getBlockX()))
+                    .replaceAll("%y%", Integer.toString(tpLoc.getBlockY()))
+                    .replaceAll("%z%", Integer.toString(tpLoc.getBlockZ()))
+            ));
         });
     }
     

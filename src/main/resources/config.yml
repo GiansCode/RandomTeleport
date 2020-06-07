@@ -23,5 +23,5 @@ messages:
   noPermission: '&cYou don''t have the permission for execute this command'
   cooldown: '&cYou''ve to wait 60 seconds before teleport again'
   warmup: '&cYou will be teleported in 5 seconds'
-  teleported: '&aTeleported'
+  teleported: '&aTeleported to X: %x% Y: %y% Z: %z%'
   reloaded: '&aPlugin reloaded'
